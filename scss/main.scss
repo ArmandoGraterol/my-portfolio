@@ -1,0 +1,29 @@
+/* Author: Armando Graterol */
+
+/* ASSETS */
+
+@import "assets/_bootstrap.scss";
+@import "assets/hamburgers/_hamburgers.scss";
+
+/* BASE */
+
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_base.scss";
+
+/* MODULES */
+
+@import "modules/_typhography.scss";
+@import "modules/_icons.scss";
+@import "modules/_buttons.scss";
+@import "modules/_navBrand.scss";
+@import "modules/_navbarItems.scss";
+@import "modules/_projectImage.scss";
+@import "modules/_projectMore.scss";
+
+/* LAYOUTS */
+
+@import "layouts/_navigationBar.scss";
+@import "layouts/_main.scss";
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";

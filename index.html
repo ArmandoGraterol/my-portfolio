@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>Armando Graterol</title>
+
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar" id="navbar">
+                <div class="navbar-header">
+                    <button type="button" 
+                        class="navbar-toggle collapsed" 
+                        data-toggle="collapse" 
+                        data-target="#navigationLinks" 
+                        aria-expanded="false"
+                    >
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">Armando Graterol</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navigationLinks">
+                    <ul class="nav navbar-nav">
+                        <li class="active navbar__items"><a href="#projects">Proyectos</a></li>
+                        <li class="navbar__items"><a href="#skills">Habilidades</a></li>
+                        <li class="navbar__items"><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+        </nav>
+
+        <!-- HEADER -->
+        <header>
+            <h1>Desarrollador Front-End</h1>
+            <p>Con una gran disciplina por aprender, acompañado por una pasión por los juegos, libros y música</p>
+        </header>
+            <main class="container-fluid">
+                <section class="portfolio__projects" id="projects">
+                   
+                    <h2><i class="content__icon fa fa-cogs" aria-hideen="true"></i> Proyectos</h2>
+                    <div class="row">
+                         <figure class="col-sm-6">
+                            <img class="project__image" src="img/dribbbleDesign.png" alt="Landing page design"/>
+                            <figcaption>Página de bienvenida</figcaption>
+                            <img class="project__image" src="img/TodoApp.png" alt="Todo app"/>
+                            <figcaption>Aplicación de Tareas</figcaption>
+                        </figure>
+
+                        <figure class="col-sm-6">
+                            <img class="project__image" src="img/resumeDesign.png" alt="Resume design"/>
+                            <figcaption>Diseño de resumen replicado</figcaption>
+                        </figure>
+
+                        <figure class="col-sm-6">
+                            <img class="project__image" src="img/Calculator.png" alt="Calculator"/>
+                            <figcaption>Calculadora</figcaption>
+                        </figure>
+
+                        <figure class="col-sm-6">
+                            <img class="project__image" src="img/Clock.png" alt="Clock" />
+                            <figcaption>Reloj</figcaption>
+                        </figure>
+                    </div>
+
+                    <p class="project__more">Para más información pasen por mi <a href="https://github.com/ArmandoGraterol">Github</a></p>
+                </section>
+                <section class="portfolio__skills container-fluid" id="skills">
+                    
+                    <h2>
+                        <i class="content__icon fa fa-diamond" aria-hideen="true"></i>
+                        Habilidades
+                    </h2>
+                    <div class="row">
+                        <figure class="col-xs-3">
+                            <img class="list__icons" src="img/html-5.svg" alt="HTML5">
+                            <figcaption>HTML</figcaption>
+                        </figure>
+
+                        <figure class="col-xs-3">
+                            <img class="list__icons" src="img/css-3.svg" alt="CSS3">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+
+                        <figure class="col-xs-3">
+                            <img class="list__icons" src="img/bootstrap.svg" alt="Bootstrap">
+                            <figcaption>Bootstrap</figcaption>
+                        </figure>
+
+                        <figure class="col-xs-3">
+                            <img class="list__icons" src="img/sass.svg" alt="Sass">
+                            <figcaption>Sass/Scss</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row">
+                        <figure class="col-xs-3">
+                            <img class="list__icons" src="img/javascript.svg" alt="Javascript">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    
+                        <figure class="col-xs-3">
+                            <img class="list__icons" src="img/react.svg" alt="React">
+                            <figcaption>React</figcaption>
+                        </figure>
+
+                        <figure class="col-xs-3">
+                            <img class="list__icons" src="img/redux.svg" alt="Redux">
+                            <figcaption>Redux</figcaption>
+                        </figure>
+
+                        <figure class="col-xs-3">
+                            <img class="list__icons list__icons--jquery" src="img/jquery.svg" alt="jQuery">
+                            <figcaption>jQuery</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <a class="content__up" href="#navbar"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            </main>
+            <!-- FOOTER -->
+            <footer class="container-fluid">
+                <div class="row" id="contact">
+                    <a href="mailto:armandogrtrl@gmail.com" class="col-xs-4 footer__button"><i class="footer__icon fa fa-envelope-o fa-3 pull-right"></i></a>
+                    <a href="https://www.linkedin.com/in/armando-graterol-2ab829119/" class="col-xs-4 footer__button"><i class="footer__icon fa fa-linkedin fa-3 "></i></a>
+                    <a href="https://github.com/ArmandoGraterol" class="col-xs-4 footer__button"><i class="footer__icon fa fa-github fa-3 pull-left"></i></a>
+                </div>
+            </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

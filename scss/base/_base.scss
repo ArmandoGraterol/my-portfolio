@@ -1,0 +1,46 @@
+html, body {
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+hr{
+    width: 50%;
+    border-color: $secondaryColor;
+}
+
+h2{
+    color: #333;
+}
+
+h3 {
+    margin-top: 15%;
+    margin-bottom: 2%;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: $secondaryColor;
+}
+
+a {
+    color: $primaryColor;
+    font-weight: bold;
+    &:hover, &:focus {
+      color: $primaryColor;
+      text-decoration: none;
+      outline: none;
+    }
+}
+
+figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
