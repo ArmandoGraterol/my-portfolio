@@ -1,14 +1,14 @@
 .navbar-brand {
   color: $primaryColor;
   font-weight: bold;
-  font-size: 20px;
-
+  font-size: 25px;
+  padding: 1% 0 1% 2%;
   &:hover, &:focus {
     color: $primaryColor;
   }
 }
 
-@media (min-width: $screen-sm-min) {
+@media (min-width: 768px) {
   .navbar-brand {
     font-size: 25px;
   }

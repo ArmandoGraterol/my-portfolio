@@ -1,4 +1,12 @@
-.footer__button {
-  margin-top: 2%;
-  margin-bottom: 3%;
+.navbar-toggler {
+  color: $primaryColor;
+
+  &:focus {
+    outline: none;
+  }
+  
+  &-icon {
+    font-size: 23px;
+    padding-top: 15%;
+  }
 }

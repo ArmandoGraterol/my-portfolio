@@ -1,0 +1,14 @@
+.footer__contact-links {
+  margin: 2% 2% 3% 2%;
+  border: 2px solid $primaryColor;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding-top: 3%;
+}
+
+@media (min-width: 768px) {
+  .footer__contact-links {
+    padding-top: 1%;
+  }
+}

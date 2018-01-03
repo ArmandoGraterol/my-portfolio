@@ -1,20 +1,10 @@
-.content__icon {
-    color: grey;
-    font-size: 20px;
-}
-
 .footer__icon {
     font-size: 30px;
 }
 
 .content__up {
-    font-size: 30px;
-    position: fixed;
-    top: 80%;
-    left: 90%;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0 2% 0 2%;
-
+    font-size: 40px;
+    padding-bottom: 50px;
 }
 
 .fa-bars {
@@ -22,26 +12,7 @@
     font-size: 18px;
 }
 
-.list__icons {
-    margin-top: 50%;
-    width: 100%;
-    &--jquery {
-        width: 150%;
-    }
-}
-
-@media (min-width: $screen-sm-min) {
-
-    .list__icons {
-        width: 30%;
-        &--jquery {
-            width: 60%;
-        } 
-    }
-    
-    .content__up {
-        font-size: 60px;
-    }
+@media (min-width: 768px) {
 
     .footer__icon {
         font-size: 35px;

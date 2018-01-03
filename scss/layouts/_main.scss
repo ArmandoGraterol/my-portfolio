@@ -1,12 +1,15 @@
 main {
   text-align: center;
+  padding-top: 5%;
+}
+
+.portfolio__experience {
   padding-bottom: 10%;
 }
 
 .portfolio__projects {
-  padding-top: 7%;
-  padding-bottom: 2%;
-  background-color: #E4E4E4;
+  background-color: $secondaryBackgroundColor;
+  padding-top: 5%;
 }
 
 .portfolio__skills {

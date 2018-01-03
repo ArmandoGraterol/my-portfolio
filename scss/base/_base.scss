@@ -12,31 +12,34 @@ hr{
     border-color: $secondaryColor;
 }
 
-h2{
-    color: #333;
-}
-
 h3 {
-    margin-top: 15%;
     margin-bottom: 2%;
 }
 
 main {
     background-color: white;
-}
 
-footer {
-    background-color: $secondaryColor;
+    h2 {
+        padding-bottom: 7%;
+    }
+
+    h4 {
+        color: $primaryColor;
+    }
 }
 
 a {
-    color: $primaryColor;
+    color: #333;
     font-weight: bold;
     &:hover, &:focus {
       color: $primaryColor;
       text-decoration: none;
       outline: none;
     }
+}
+
+p{
+    font-size: 18px;
 }
 
 figcaption {
