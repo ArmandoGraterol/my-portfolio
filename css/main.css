@@ -2,7 +2,7 @@
 /* BASE */
 html, body {
   box-sizing: border-box;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 *, *:before, *:after {
@@ -20,10 +20,6 @@ h3 {
 
 main {
   background-color: white;
-}
-
-main h2 {
-  padding-bottom: 7%;
 }
 
 main h4 {
@@ -54,11 +50,13 @@ figcaption {
 /* MODULES */
 .footer__icon {
   font-size: 30px;
-}
-
-.content__up {
-  font-size: 40px;
-  padding-bottom: 50px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #CC2A41;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa-bars {
@@ -69,6 +67,8 @@ figcaption {
 @media (min-width: 768px) {
   .footer__icon {
     font-size: 35px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -119,11 +119,11 @@ figcaption {
 }
 
 .project__image {
-  width: 90%;
-  height: 70%;
+  width: 100%;
+  height: auto;
   margin-top: 5%;
-  margin-bottom: 5%;
-  border-radius: 3%;
+  margin-bottom: 2%;
+  border-radius: 2%;
 }
 
 .project__more {
@@ -145,16 +145,11 @@ figcaption {
 
 .footer__contact-links {
   margin: 2% 2% 3% 2%;
-  border: 2px solid #CC2A41;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  padding-top: 3%;
 }
 
 @media (min-width: 768px) {
   .footer__contact-links {
-    padding-top: 1%;
+    padding: 1%;
   }
 }
 
@@ -171,6 +166,7 @@ nav {
 main {
   text-align: center;
   padding-top: 5%;
+  margin-bottom: 2%;
 }
 
 .portfolio__experience {
@@ -178,12 +174,26 @@ main {
 }
 
 .portfolio__projects {
-  background-color: #BCBCBC;
   padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: lightgrey;
+}
+
+.portfolio__projects .row {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .portfolio__skills {
   padding-top: 5%;
+}
+
+.underline {
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 5%;
+  margin: 0 auto;
+  margin-bottom: 3%;
 }
 
 header {
@@ -206,12 +216,15 @@ footer {
   text-align: center;
 }
 
-footer .row {
+footer .contact {
   padding-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media (min-width: 992px) {
-  footer .row {
+  footer .contact {
     padding-top: 0;
   }
 }
