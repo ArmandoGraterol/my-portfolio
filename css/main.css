@@ -143,6 +143,10 @@ figcaption {
   }
 }
 
+.language-selector {
+  font-size: 15px;
+}
+
 .footer__contact-links {
   margin: 2% 2% 3% 2%;
 }
@@ -191,7 +195,7 @@ main {
 .underline {
   border: 3px solid black;
   border-radius: 5px;
-  width: 5%;
+  width: 70px;
   margin: 0 auto;
   margin-bottom: 3%;
 }
