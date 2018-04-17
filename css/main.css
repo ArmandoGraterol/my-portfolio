@@ -15,7 +15,8 @@ hr {
 }
 
 h3 {
-  margin-bottom: 2%;
+  font-size: 22px;
+  color: #CC2A41;
 }
 
 main {
@@ -144,7 +145,7 @@ figcaption {
 }
 
 .language-selector {
-  font-size: 15px;
+  color: #CC2A41;
 }
 
 .footer__contact-links {
