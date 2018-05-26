@@ -42,7 +42,7 @@ p {
   font-size: 18px;
 }
 
-figcaption {
+figcaption, .carousel a {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5%;
@@ -122,14 +122,21 @@ figcaption {
 .project__image {
   width: 100%;
   height: auto;
-  margin-top: 5%;
   margin-bottom: 2%;
-  border-radius: 2%;
+  border-radius: 1%;
+}
+
+.carousel img {
+  border-radius: 1%;
 }
 
 .project__more {
   font-size: 20px;
   padding: 8%;
+}
+
+.carousel-inner {
+  margin-bottom: 2%;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -140,7 +147,6 @@ figcaption {
   .carousel {
     height: 40%;
     width: 50%;
-    margin-left: 24%;
   }
 }
 
@@ -176,6 +182,12 @@ main {
 
 .portfolio__experience {
   padding-bottom: 10%;
+}
+
+.experience {
+  border: solid #333;
+  border-width: 2px 0 2px 0;
+  padding: 3% 0 3% 0;
 }
 
 .portfolio__projects {

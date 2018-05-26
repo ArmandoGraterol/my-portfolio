@@ -1,3 +1,7 @@
+.carousel-inner {
+  margin-bottom: 2%;
+}
+
 .carousel-control-prev-icon, .carousel-control-next-icon  {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -6,6 +10,5 @@
   .carousel {
     height: 40%;
     width: 50%;
-    margin-left: 24%;
   }
 }
