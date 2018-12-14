@@ -1,160 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-        <title>Armando Graterol</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    </head>
-    <body id="home">
-        <!-- NAVIGATION BAR -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="#">Armando Graterol</a>
-            <button type="button" 
-                class="navbar-toggler" 
-                data-toggle="collapse" 
-                data-target="#navigationLinks"
-                aria-controls="navigationLinks" 
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="navbar-toggler-icon fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navigationLinks">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link scroll" href="#home">Inicio</a>
-                    </li>                                                
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#experience">Experiencia</a>
-                    </li>                        
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#projects">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#contact" id="contactLink">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link language-selector" href="index.html">Inglés(English)</a>
-                    </li>
-                </ul>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Armando Graterol | Desarrollador Frontend</title>
+</head>
+
+<body id="home">
+  <!-- HEADER -->
+  <header>
+    <nav class="header__navbar">
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact" class="navbar__contact">Contactame</a>
+      <a href="index.html" class="navbar__language">Cambiar a Ingles(English)</a>
+    </nav>
+    <div class="header__hero-section">
+      <h1>Armando Graterol</h1>
+      <h2>Soy un <span class="hero-section__job">Desarrollador Frontend</span></h2>
+      <p>Actualmente trabajando en: <a href="https://clichead.com/"><img src="img/clichead.svg" alt="Clichead"></a></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="main__skills-section" id="#skills">
+      <h3>Habilidades</h3>
+      <ul class="skills-section__skill-list">
+        <li><img src="img/html.svg" alt="HTML Logo">HTML</li>
+        <li><img src="img/css.svg" alt="CSS Logo"> CSS</li>
+        <li><img src="img/bootstrap.svg" alt="Bootstrap Logo"> Bootstrap</li>
+        <li><img src="img/sass.svg" alt="SASS Logo"> SASS</li>
+        <li><img src="img/javascript.svg" alt="Javascript Logo"> Javascript</li>
+        <li><img src="img/jquery.svg" alt="jQuery Logo"> jQuery</li>
+        <li><img src="img/react.svg" alt="ReactJS Logo"> React</li>
+        <li><img src="img/redux.svg" alt="Redux Logo"> Redux</li>
+        <li><img src="img/node.svg" alt="NodeJS Logo"> NodeJS</li>
+        <li><img src="img/wordpress.svg" alt="Wordpress Logo"> Wordpress</li>
+      </ul>
+    </section>
+    <section class="main__projects-section" id="projects">
+      <h3>Proyectos</h3>
+      <ul class="projects-section__project-list">
+        <li class="project-list__project">
+          <a href="https://github.com/ArmandoGraterol/resume-design">
+            <div class="project__overlay"></div>
+            <div class="project__content">
+              <h4>Plantilla de Resumen</h4>
+              <ul class="content__tech-list">
+                <li>Bootstrap</li>
+                <li>SASS</li>
+              </ul>
             </div>
-        </nav>
-                
-
-        <!-- HEADER -->
-        <header>
-            <div class="hero-section">
-                <h2>Desarrollador Web</h2>
-                <h4>en Venezuela</h4>
-                <p>Front-End: HTML, CSS( Bootstrap, Sass ), Javascript( jQuery, React / Redux)</p>
-                <p>Back-End: PHP, NodeJS(Express)</p>
-                <p>CMS: Wordpress</p>
+            <img src="img/resumeDesign.png" alt="Plantilla de Resumen">
+          </a>
+        </li>
+        <li class="project-list__project">
+          <a href="https://github.com/ArmandoGraterol/shopping-list">
+            <div class="project__overlay"></div>
+            <div class="project__content">
+              <h4>Lista de Compras</h4>
+              <ul class="content__tech-list">
+                <li>React</li>
+                <li>Redux</li>
+                <li>NodeJS</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+              </ul>
             </div>
-        </header>
-            <main>
-                <section class="container-fluid portfolio__experience" id="experience">
-                    <h2>
-                        Experiencia
-                    </h2>
-                    <div class="underline"></div>
-                    <div class="experience">
-                        <div class="row">
-                            <h3 class="col-12">Desarrollador Web Remoto</h3>
-                            <div class="col"></div>
-                            <p class="col-2">Clichead</p>
-                            <p class="col-2">Junio 2018 - Actualmente</p>
-                            <div class="col"></div>
-                        </div>
-                        <p>HTML - CSS - Javascript - PHP - Wordpress</p>
-                    </div>
-                    
-                </section>
-                <section class="container-fluid portfolio__projects" id="projects">
-                   <h2>Proyectos</h2>
-                   <div class="underline"></div>
-                   <div class="row">
-                        <div id="carousel" class="col-sm-6 carousel slide" data-ride="carousel" data-interval="0">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/home-blog.png" alt="Pagina principal del Blog">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/about-blog.png" alt="Pagina 'Acerca' del Blog">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/contact-blog.png" alt="Pagina de Contacto del Blog">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Anterior</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Siguiente</span>
-                            </a>
-                            <a href="https://github.com/ArmandoGraterol/blog-theme-wordpress">Blog Theme para Wordpress <span class="fa fa-link"></span></a>
-                        </div>            
-                        <div class="col-sm-6">
-                            <figure>
-                                <a href="https://github.com/ArmandoGraterol/todoapp-redux">
-                                    <img class="project__image" src="img/TodoApp.png" alt="Todo app"/>
-                                </a>
-                                <figcaption>App de Tareas</figcaption>
-                            </figure>
-    
-                            <figure>
-                                <a href="https://secret-bastion-34509.herokuapp.com/">
-                                    <img class="project__image" src="img/yelpcamp.png" alt="YelpCamp" />
-                                </a>
-                                <figcaption>YelpCamp</figcaption>
-                            </figure>
-    
-                            <figure>
-                                <a href="https://armandograterol.github.io/resume-design/">
-                                    <img class="project__image" src="img/resumeDesign.png" alt="Resume design"/>
-                                </a>
-                                <figcaption>Templado de CV</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <!-- FOOTER -->
-            <footer>
-                <div class="contact" id="contact">
+            <img src="img/shoppinglist.png" alt="Lista de Compras">
+          </a>
+        </li>
+        <li class="project-list__project">
+          <a href="https://github.com/ArmandoGraterol/coin-monitor">
+            <div class="project__overlay"></div>
+            <div class="project__content">
+              <h4>Monitor de Criptomonedas</h4>
+              <ul class="content__tech-list">
+                <li>React</li>
+                <li>Cryptocompare API</li>
+              </ul>
+            </div>
+            <img src="img/coinmonitor.png" alt="Monitor de Criptomonedas">
+          </a>
+        </li>
+        <li class="project-list__project">
+          <a href="https://github.com/ArmandoGraterol/chat">
+            <div class="project__overlay"></div>
+            <div class="project__content">
+              <h4>Chat</h4>
+              <ul class="content__tech-list">
+                <li>React</li>
+                <li>Redux</li>
+                <li>NodeJS</li>
+                <li>Websockets</li>
+              </ul>
+            </div>
+            <img src="img/chat.png" alt="Chat">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-                    <a class="footer__contact-links" href="mailto:armandogrtrl@gmail.com">
-                        <i class="footer__icon fa fa-envelope-o"></i>
-                    </a>
-                    <a class="footer__contact-links" href="https://www.linkedin.com/in/armandograterol">
-                        <i class="footer__icon fa fa-linkedin"></i>
-                    </a>                         
-                    <a class="footer__contact-links" href="https://github.com/ArmandoGraterol">
-                        <i class="footer__icon fa fa-github"></i>
-                    </a>
-                    <a class="footer__contact-links" href="https://codepen.io/armandograterol">
-                        <i class="footer__icon fa fa-codepen"></i>
-                    </a>
+  <!-- FOOTER -->
+  <footer>
+    <h2>Contactame</h2>
+    <div class="contact" id="contact">
+      <a class="footer__contact-links" href="mailto:armandogrtrl@gmail.com">
+        Email
+      </a>
+      <a class="footer__contact-links" href="https://www.linkedin.com/in/armandograterol">
+        Linkedin
+      </a>
+      <a class="footer__contact-links" href="https://github.com/ArmandoGraterol">
+        Github
+      </a>
+    </div>
+    <p>&#9400; Hecho por mí - 2018</p>
+  </footer>
+</body>
 
-                </div>
-                <p>&#9400; Hecha por mí - 2018</p>
-            </footer>
-
-        <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
 </html>

@@ -1,0 +1,278 @@
+/* Author: Armando Graterol */
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0997C5;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+@media(max-width: 576px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 25px;
+  color: #333;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer h3 {
+  margin-bottom: 0;
+}
+
+/* HEADER */
+header {
+  margin-top: 20px;
+}
+
+.header__navbar {
+  text-align: center;
+}
+
+.header__navbar a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 3px 10px;
+  font-size: 18px;
+}
+
+.navbar__contact {
+  border: 2px solid #333;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.3s linear;
+}
+
+@media(max-width: 576px) {
+  .navbar__language {
+    display: block;
+  }
+}
+
+.navbar__contact:hover {
+  background-color: #0997C5;
+  border-color: #0997C5;
+  color: white;
+}
+
+.header__hero-section {
+  padding: 12% 20%;
+}
+
+@media(max-width: 576px) {
+  .header__hero-section {
+    padding: 12% 5%;
+    text-align: center;
+  }
+}
+
+.header__hero-section img {
+  position: relative;
+  top: 4px;
+  width: 18%;
+  min-width: 120px;
+}
+
+.hero-section__job {
+  color: #0997C5;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main {
+  background-color: rgb(250, 250, 250);
+}
+
+/* SKILLS SECTION */
+.main__skills-section {
+  padding: 3% 10%;
+}
+
+.skills-section__skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-section__skill-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  font-size: 18px;
+}
+
+.skills-section__skill-list img {
+  width: 100px;
+  margin-bottom: 15%;
+}
+
+/* END SKILLS SECTION */
+
+/* PROJECTS SECTION */
+
+.projects-section__project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3% 18%; 
+}
+
+.project-list__project {
+  position: relative;
+  width: 48.7%;
+  margin: 0.6%;
+  overflow: hidden;
+}
+
+@media(max-width: 576px) {
+  .projects-section__project-list {
+    padding: 3% 5%;
+  }
+
+  .project-list__project {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) { 
+  .projects-section__project-list {
+    padding: 3% 12%;
+  }
+}
+
+.project__overlay {
+  position: absolute;
+  height: 99%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity 0.4s linear;
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  transform: translateY(110%);
+  transition: transform 0.4s ease-out;
+}
+
+.project-list__project:hover .project__overlay, 
+.project-list__project:hover .project__content {
+  opacity: 1;
+}
+
+.project-list__project:hover .project__content {
+  transform: translateY(0);
+}
+
+.projects-section__project-list img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.content__tech-list {
+  display: flex;
+  width: 100%;
+  margin-top: 2%;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
+.content__tech-list li {
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 1%;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  
+}
+
+/*END PROJECTS SECTION */
+
+/* END MAIN */
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
+
+footer .contact {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  footer .contact {
+    padding-top: 0;
+  }
+}
+
+.footer__contact-links {
+  margin: 20px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .footer__contact-links {
+    padding: 1%;
+  }
+}
+
+/* END FOOTER */

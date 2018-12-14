@@ -1,158 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-        <title>Armando Graterol</title>
-    </head>
-    <body id="home">
-        <!-- NAVIGATION BAR -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="#">Armando Graterol</a>
-            <button type="button" 
-                class="navbar-toggler" 
-                data-toggle="collapse" 
-                data-target="#navigationLinks"
-                aria-controls="navigationLinks" 
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="navbar-toggler-icon fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navigationLinks">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link scroll" href="#home">Home</a>
-                    </li>                                                
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#experience">Experience</a>
-                    </li>                        
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#contact" id="contactLink">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link language-selector" href="index-es.html">Spanish(Español)</a>
-                    </li>
-                </ul>
-            </div>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Armando Graterol | Frontend Developer</title>
+</head>
+
+<body id="home">
+    <!-- HEADER -->
+    <header>
+        <nav class="header__navbar">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="navbar__contact">Contact Me</a>
+            <a href="index-es.html" class="navbar__language">Change to Spanish(Español)</a>
         </nav>
-                
+        <div class="header__hero-section">
+            <h1>Armando Graterol</h1>
+            <h2>I'm a <span class="hero-section__job">Frontend Developer</span></h2>
+            <p>Currently working for: <a href="https://clichead.com/"><img src="img/clichead.svg" alt="Clichead"></a></p>
+        </div>
+    </header>
 
-        <!-- HEADER -->
-        <header>
-            <div class="hero-section">
-                <h2>Web Developer</h2>
-                <h4>in Venezuela</h4>
-                <p>Front-End: HTML, CSS( Bootstrap, Sass ), Javascript( jQuery, React / Redux)</p>
-                <p>Back-End: PHP, NodeJS(Express)</p>
-                <p>CMS: Wordpress</p>
-            </div>
-        </header>
-            <main>
-                <section class="container-fluid portfolio__experience" id="experience">
-                    <h2>
-                        Experience
-                    </h2>
-                    <div class="underline"></div>
-                    <div class="experience">
-                        <div class="row">
-                            <h3 class="col-12">Remote Web Developer</h3>
-                            <div class="col"></div>
-                            <p class="col-2">Clichead</p>
-                            <p class="col-2">June 2018 - Now </p>
-                            <div class="col"></div>
+    <main>
+        <section class="main__skills-section" id="#skills">
+            <h3>Skills</h3>
+            <ul class="skills-section__skill-list">
+                <li><img src="img/html.svg" alt="HTML Logo">HTML</li>
+                <li><img src="img/css.svg" alt="CSS Logo"> CSS</li>
+                <li><img src="img/bootstrap.svg" alt="Bootstrap Logo"> Bootstrap</li>
+                <li><img src="img/sass.svg" alt="SASS Logo"> SASS</li>
+                <li><img src="img/javascript.svg" alt="Javascript Logo"> Javascript</li>
+                <li><img src="img/jquery.svg" alt="jQuery Logo"> jQuery</li>
+                <li><img src="img/react.svg" alt="ReactJS Logo"> React</li>
+                <li><img src="img/redux.svg" alt="Redux Logo"> Redux</li>
+                <li><img src="img/node.svg" alt="NodeJS Logo"> NodeJS</li>
+                <li><img src="img/wordpress.svg" alt="Wordpress Logo"> Wordpress</li>
+            </ul>
+        </section>
+        <section class="main__projects-section" id="projects">
+            <h3>Projects</h3>
+            <ul class="projects-section__project-list">
+                <li class="project-list__project">
+                    <a href="https://github.com/ArmandoGraterol/resume-design">
+                        <div class="project__overlay"></div>
+                        <div class="project__content">
+                            <h4>Resume Website</h4>
+                            <ul class="content__tech-list">
+                                <li>Bootstrap</li>
+                                <li>SASS</li>
+                            </ul>
                         </div>
-                        <p>HTML - CSS - Javascript - PHP - Wordpress</p>
-                    </div>
-                </section>
-                <section class="container-fluid portfolio__projects" id="projects">
-                   <h2>Projects</h2>
-                   <div class="underline"></div>
-                    <div class="row">
-                        <div id="carousel" class="col-sm-6 carousel slide" data-ride="carousel" data-interval="0">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/home-blog.png" alt="Home page of Blog">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/about-blog.png" alt="About page of Blog">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/contact-blog.png" alt="Contact page of Blog">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                            <a href="https://github.com/ArmandoGraterol/blog-theme-wordpress">Blog Theme for Wordpress <span class="fa fa-link"></span></a>
-                        </div>            
-                        <div class="col-sm-6">
-                            <figure>
-                                <a href="https://github.com/ArmandoGraterol/todoapp-redux">
-                                    <img class="project__image" src="img/TodoApp.png" alt="Todo app"/>
-                                </a>
-                                <figcaption>Tasks App</figcaption>
-                            </figure>
-    
-                            <figure>
-                                <a href="https://secret-bastion-34509.herokuapp.com/">
-                                    <img class="project__image" src="img/yelpcamp.png" alt="YelpCamp" />
-                                </a>
-                                <figcaption>YelpCamp</figcaption>
-                            </figure>
-    
-                            <figure>
-                                <a href="https://armandograterol.github.io/resume-design/">
-                                    <img class="project__image" src="img/resumeDesign.png" alt="Resume design"/>
-                                </a>
-                                <figcaption>Resume template</figcaption>
-                            </figure>
+                        <img src="img/resumeDesign.png" alt="Resume Design">
+                    </a>
+                </li>
+                <li class="project-list__project">
+                    <a href="https://github.com/ArmandoGraterol/shopping-list">
+                        <div class="project__overlay"></div>
+                        <div class="project__content">
+                            <h4>Shopping List App</h4>
+                            <ul class="content__tech-list">
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>NodeJS</li>
+                                <li>Express</li>
+                                <li>PostgreSQL</li>
+                            </ul>
                         </div>
-                    </div>
-                </section>
-            </main>
-            <!-- FOOTER -->
-            <footer>
-                <div class="contact" id="contact">
-
-                    <a class="footer__contact-links" href="mailto:armandogrtrl@gmail.com">
-                        <i class="footer__icon fa fa-envelope-o"></i>
+                        <img src="img/shoppinglist.png" alt="Shopping List App">
                     </a>
-                    <a class="footer__contact-links" href="https://www.linkedin.com/in/armandograterol">
-                        <i class="footer__icon fa fa-linkedin"></i>
-                    </a>                         
-                    <a class="footer__contact-links" href="https://github.com/ArmandoGraterol">
-                        <i class="footer__icon fa fa-github"></i>
+                </li>
+                <li class="project-list__project">
+                    <a href="https://github.com/ArmandoGraterol/coin-monitor">
+                        <div class="project__overlay"></div>
+                        <div class="project__content">
+                            <h4>Coin Monitor</h4>
+                            <ul class="content__tech-list">
+                                <li>React</li>
+                                <li>Cryptocompare API</li>
+                            </ul>
+                        </div>
+                        <img src="img/coinmonitor.png" alt="Coin Monitor">
                     </a>
-                    <a class="footer__contact-links" href="https://codepen.io/armandograterol">
-                        <i class="footer__icon fa fa-codepen"></i>
+                </li>
+                <li class="project-list__project">
+                    <a href="https://github.com/ArmandoGraterol/chat">
+                        <div class="project__overlay"></div>
+                        <div class="project__content">
+                            <h4>Chat App</h4>
+                            <ul class="content__tech-list">
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>NodeJS</li>
+                                <li>Websockets</li>
+                            </ul>
+                        </div>
+                        <img src="img/chat.png" alt="Chat App">
                     </a>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-                </div>
-                <p>&#9400; Made by me - 2018</p>
-            </footer>
+    <!-- FOOTER -->
+    <footer>
+        <h2>Contact me</h2>
+        <div class="contact" id="contact">
+            <a class="footer__contact-links" href="mailto:armandogrtrl@gmail.com">
+                Email
+            </a>
+            <a class="footer__contact-links" href="https://www.linkedin.com/in/armandograterol">
+                Linkedin
+            </a>
+            <a class="footer__contact-links" href="https://github.com/ArmandoGraterol">
+                Github
+            </a>
+        </div>
+        <p>&#9400; Made by me - 2018</p>
+    </footer>
+</body>
 
-        <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
 </html>
